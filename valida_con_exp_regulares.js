@@ -3,6 +3,7 @@ const user_name = document.getElementById('name');
 const zip = document.getElementById('zip');
 const email = document.getElementById('email');
 const phone = document.getElementById('phone');
+const submit_btn = document.getElementById('submit-btn');
 
 user_name.addEventListener('keyup', validateName);
 zip.addEventListener('keyup', validateZip);
@@ -67,3 +68,5 @@ function validateForm(e){
        form.submit();
    }
 }
+
+submit_btn.disabled = false;

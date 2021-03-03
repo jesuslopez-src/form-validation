@@ -15,33 +15,33 @@
 				<form class='the-form'>
 					<div class="form-group">
 						<label for="">Name</label>
-						<input type="text" id="name" class="form-control" placeholder="Name">
+						<input type="text" id="name" class="form-control" placeholder="Name" pattern="^[a-zA-Z]{2,10}$">
 						<div class="invalid-feedback">
 							Name must be between 2 and 10  characters
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="">Zipcode</label>
-						<input type="text" id="zip" class="form-control" placeholder="00000 , 00000-0000">
+						<input type="text" id="zip" class="form-control" placeholder="00000 , 00000-0000" pattern="^[0-9]{5}(-[0-9]{4})?$">
 						<div class="invalid-feedback">
 							Enter a valid zipcode
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="">Email</label>
-						<input type="text" id="email" class="form-control" placeholder="example@somewere.com">
+						<input type="text" id="email" class="form-control" placeholder="example@somewere.com" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
 						<div class="invalid-feedback">
 							Enter a valid email
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="">Phone number</label>
-						<input type="text" id="phone" class="form-control" placeholder="(000) 000 0000 , 000-000-0000 , 000.000.0000">
+						<input type="text" id="phone" class="form-control" placeholder="(000) 000 0000 , 000-000-0000 , 000.000.0000" pattern="^\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$">
 						<div class="invalid-feedback">
 							Enter a valid phone
 						</div>
 					</div>
-					<input type="submit" value="submit" class="btn btn-primary btn-block">
+					<input type="submit" value="submit" class="btn btn-primary btn-block" id="submit-btn" disabled>
 				</form>
 			</div>
 		</div>
